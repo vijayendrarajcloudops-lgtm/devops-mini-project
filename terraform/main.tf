@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_key_pair" "ansible_key" {
   key_name   = "ansible-key"
-  public_key = file("/root/ansible-lab/ansible-key.pem.pub")
+  public_key = file("/var/lib/jenkins/keys/ansible-key.pem.pub")
 }
 
 
