@@ -1,6 +1,6 @@
 ---
 - name: Configure EC2 using Ansible
-  hosts: aws
+  hosts: web
   become: true
 
   tasks:
